@@ -4,12 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "start": "pm2 start app.js",
+    "dev": "node app.js"
   },
   "author": "Benjamin Devaublanc <benjamin.devaublanc.com> (https://github.com/devaublanc)",
   "license": "MIT",
   "dependencies": {
     "express": "4.14.0",
+    "pm2": "^2.1.5",
     "request": "2.78.0"
   },
   "devDependencies": {},
